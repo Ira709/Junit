@@ -36,7 +36,6 @@ public class BaseTest {
     public void setEndEach() {
         Selenide.localStorage().clear();
         Selenide.sessionStorage().clear();
-        Selenide.clearBrowserCookies();
     }
 
     @AfterAll

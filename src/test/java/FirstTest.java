@@ -17,7 +17,6 @@ public class FirstTest extends BaseTest{
 
     @Test
     @DisplayName("Feature-42")
-    @Disabled("Test is failing")
     void secondTest() {
         webdriver().shouldHave(url("https://platform.productstar.ru/login"));
     }

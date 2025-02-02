@@ -14,18 +14,18 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class SecondTest extends BaseTest{
 
     @Test
-    void firstTest() {
+    void fourTest() {
         webdriver().shouldHave(url("https://platform.productstar.ru/login"));
     }
 
     @Test
-    void secondTest() {
+    void fifthTest() {
         webdriver().shouldHave(url("https://platform.productstar.ru/login"));
     }
 
     @Tag("Register")
     @Test
-    void thirdTest() {
+    void sixTest() {
         $(byXpath("//*[text()='пройдите регистрацию']")).click();
         webdriver().shouldHave(url("https://platform.productstar.ru/register"));
         $(byXpath("//*[text()='Уже регистрировались?']")).click();
